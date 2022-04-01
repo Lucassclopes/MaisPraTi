@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<title>Desafio</title>
+
+	<head>
+
+		<script>
+			function ler() {
+				let texto = prompt("Entre com um texto");
+				document.getElementById('texto').value=texto;
+			}
+
+			function escrever(){
+				let texto = document.getElementById('texto').value;
+				alert("Você digitou " + texto)
+			}
+		</script>
+	</head>
+
+	<body>
+		<input id='texto' type='text' name='texto' value=''>
+		<br><br><button onclick="ler()">Ler</button>
+		<br><br><button onclick="escrever()">Escrever</button>
+
+	</body>
+
+
+</html>
